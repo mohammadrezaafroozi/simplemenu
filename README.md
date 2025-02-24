@@ -1,4 +1,4 @@
-# simplemenu
+# simple menu
 
 [demo project](https://mohammadrezaafroozi.github.io/simplemenu/)
 
