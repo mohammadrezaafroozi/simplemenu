@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+        }
+
+        .menu {
+            width: 100%;
+            height: 100px;
+            /* border: 1px solid black; */
+            margin: 100px 0;
+            display: flex;
+            justify-content: center;
+
+            >ul {
+                width: 80%;
+                height: 100%;
+                display: flex;
+                background-color: #23364b;
+
+                >li {
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    font-size: 20px;
+
+                    /* border: 2px solid rgb(230, 131, 131);  */
+                    &:first-of-type {
+                        background-color: rgb(131, 131, 247);
+                        font-size: 30px;
+                        
+                    }
+                    &:hover{
+                       >ul{ display: block;}
+
+                    }
+
+                    >ul {
+                        background-color: #23364b;
+                        display: none;
+
+                        >li {
+                            list-style-type: none;
+                            height: 40px;
+                            >a{
+                                display: flex;
+                                height: 100%;
+                                width: 100%;
+                                padding-left: 12px;
+                                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                                text-decoration: none;
+                                color: white;
+                                &:hover{
+                                    background-color:  rgb(131, 131, 247);
+                                }
+
+                            }
+                           
+
+                        
+                        }
+                    }
+
+                    >a {
+                        display: flex;
+                        height: 100%;
+                        /* background-color: rgb(131, 131, 247); */
+                        color: white;
+                        text-decoration: none;
+                        padding: 0 25px;
+                        align-items: center;
+                        border: 1px solid rgba(255, 255, 255, 0.726);
+                        border-top: none;
+                        border-bottom: none;
+                        transition: .4s;
+                        text-transform: capitalize;
+
+                        &:hover {
+                            background-color: rgb(131, 131, 247);
+                            color: #23364b;
+                        }
+                    }
+                }
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="">
+                    <pre>   my home    </pre>
+                </a></li>
+            <li><a href="">products</a>
+                <ul>
+                    <li><a href="">shoes</a></li>
+                    <li><a href="">hat</a></li>
+                    <li><a href="">glasses</a></li>
+                    <li><a href=""> shirts</a></li>
+                    <li><a href=""> socks </a></li>
+                </ul>
+            </li>
+            <li><a href="">about us</a></li>
+            <li><a href="">map</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
